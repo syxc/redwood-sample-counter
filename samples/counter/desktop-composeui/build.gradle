@@ -1,0 +1,20 @@
+apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'org.jetbrains.compose'
+
+compose {
+  desktop {
+    application {
+      mainClass = "com.example.redwood.counter.desktop.Main"
+    }
+  }
+}
+
+dependencies {
+  implementation compose.desktop.currentOs
+  implementation projects.samples.counter.presenter
+  implementation projects.samples.counter.sharedComposeui
+  //implementation projects.redwoodComposeui
+  //implementation projects.redwoodLayoutComposeui
+  implementation libs.redwood.composeui
+  implementation libs.redwood.layout.composeui
+}

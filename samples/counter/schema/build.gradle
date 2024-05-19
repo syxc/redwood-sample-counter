@@ -1,0 +1,11 @@
+apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'app.cash.redwood.schema'
+
+dependencies {
+  //api projects.redwoodLayoutSchema
+  api libs.redwood.layout.schema
+}
+
+redwoodSchema {
+  type = 'com.example.redwood.counter.Schema'
+}

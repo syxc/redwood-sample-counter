@@ -1,0 +1,26 @@
+apply plugin: 'org.jetbrains.kotlin.multiplatform'
+apply plugin: 'app.cash.redwood'
+
+// The name of the final JS file to be referenced from HTML.
+archivesBaseName = 'counter'
+
+kotlin {
+  js {
+    // The name of the JS module which needs to be unique within the repo.
+    moduleName = 'counter-browser'
+    browser()
+    binaries.executable()
+  }
+
+  sourceSets {
+    commonMain {
+      dependencies {
+        implementation projects.samples.counter.schema.widget
+        implementation projects.samples.counter.presenter
+        // implementation projects.redwoodLayoutDom
+        implementation libs.redwood.layout.dom
+        implementation libs.kotlinx.coroutines.core
+      }
+    }
+  }
+}

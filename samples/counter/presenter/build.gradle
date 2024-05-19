@@ -1,0 +1,29 @@
+apply plugin: 'org.jetbrains.kotlin.multiplatform'
+apply plugin: 'app.cash.redwood'
+
+kotlin {
+  iosArm64()
+  iosX64()
+  iosSimulatorArm64()
+
+  js {
+    browser()
+  }
+  jvm()
+
+  sourceSets {
+    commonMain {
+      dependencies {
+        api projects.samples.counter.schema.compose
+      }
+    }
+    commonTest {
+      dependencies {
+        implementation libs.kotlin.test
+        implementation libs.assertk
+        implementation libs.kotlinx.coroutines.test
+        implementation projects.samples.counter.schema.testing
+      }
+    }
+  }
+}
