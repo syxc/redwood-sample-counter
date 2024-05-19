@@ -17,7 +17,7 @@ kotlin {
       dependencies {
         implementation projects.samples.counter.schema.widget
         implementation projects.samples.counter.presenter
-        // implementation projects.redwoodLayoutDom
+        //implementation projects.redwoodLayoutDom
         implementation libs.redwood.layout.dom
         implementation libs.kotlinx.coroutines.core
       }

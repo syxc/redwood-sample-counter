@@ -1,8 +1,7 @@
 [versions]
 agp = "8.2.2"
-kotlin = "1.9.23"
+kotlin = "1.9.24"
 compose = "1.6.7"
-compose-compiler = "1.5.13"
 compose-material3 = "1.2.1"
 androidx-activityCompose = "1.9.0"
 
@@ -11,16 +10,11 @@ kotlinx-serialization = "1.6.3"
 
 jbCompose = "1.6.2"
 
-redwood = "0.10.0"
+redwood = "0.11.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 
 androidx-core = { module = "androidx.core:core-ktx", version = "1.13.1" }
 androidx-appCompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
@@ -40,7 +34,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 
 google-material = { module = "com.google.android.material:material", version = "1.12.0" }
 
-jetbrains-compose-compiler = "org.jetbrains.compose.compiler:compiler:1.5.13.3"
+jetbrains-compose-compiler = "org.jetbrains.compose.compiler:compiler:1.5.14"
 jetbrains-compose-gradlePlugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "jbCompose" }
 jetbrains-compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "jbCompose" }
 jetbrains-compose-material = { module = "org.jetbrains.compose.material:material", version.ref = "jbCompose" }
@@ -61,7 +55,7 @@ redwood-layout-widget = { module = "app.cash.redwood:redwood-layout-widget", ver
 redwood-layout-schema = { module = "app.cash.redwood:redwood-layout-schema", version.ref = "redwood" }
 redwood-layout-uiview = { module = "app.cash.redwood:redwood-layout-uiview", version.ref = "redwood" }
 redwood-layout-testing = { module = "app.cash.redwood:redwood-layout-testing", version.ref = "redwood" }
-redwood-layout-dom = { module="app.cash.redwood:redwood-layout-dom", version.ref = "redwood"}
+redwood-layout-dom = { module = "app.cash.redwood:redwood-layout-dom", version.ref = "redwood" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

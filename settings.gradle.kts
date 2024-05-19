@@ -15,8 +15,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "redwood-sample-counter"
-include(":androidApp")
-include(":shared")
 // Redwood samples counter
 include(":samples:counter:android-composeui")
 include(":samples:counter:android-views")
