@@ -1,16 +1,14 @@
 [versions]
 agp = "8.2.2"
-kotlin = "1.9.24"
-compose = "1.6.7"
-compose-material3 = "1.2.1"
+kotlin = "1.9.23"
+redwood = "0.10.0"
+
+jbCompose = "1.6.2"
+
 androidx-activityCompose = "1.9.0"
 
 kotlinx-coroutines = "1.8.1"
 kotlinx-serialization = "1.6.3"
-
-jbCompose = "1.6.2"
-
-redwood = "0.11.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -34,7 +32,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 
 google-material = { module = "com.google.android.material:material", version = "1.12.0" }
 
-jetbrains-compose-compiler = "org.jetbrains.compose.compiler:compiler:1.5.14"
+jetbrains-compose-compiler = "org.jetbrains.compose.compiler:compiler:1.5.13.2"
 jetbrains-compose-gradlePlugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "jbCompose" }
 jetbrains-compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "jbCompose" }
 jetbrains-compose-material = { module = "org.jetbrains.compose.material:material", version.ref = "jbCompose" }
