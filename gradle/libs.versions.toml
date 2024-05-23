@@ -3,7 +3,7 @@ agp = "8.2.2"
 kotlin = "1.9.24"
 redwood = "0.11.0"
 
-jbCompose = "1.6.2"
+jbCompose = "1.6.10"
 
 androidx-activityCompose = "1.9.0"
 
